@@ -42,5 +42,8 @@ public class SaleService {
 	public List<SaleSuccsessDTO> succsessGroupedBySeller(){
 		return repository.successGroupedBySeller();
 	}
-	
+
+	public int findAll() {
+		return repository.findAll().size();
+	}
 }
